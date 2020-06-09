@@ -2,7 +2,7 @@
 # Clasificación supervisada de imágenes 
 --------------
 
-## Loading up the image
+## Cargando la imagen
 
 The first step is to get a cloud free image with which to work.  Do this by importing USGS Landsat 8 Surface Reflectance Tier 1 imagery, spatially filtering to a region of interest (filterBounds), temporally filtering to your required date range (filterDate), and lastly sorting by cloud cover ('CLOUD_COVER') and extracting the least cloudy scene (first).
 
@@ -28,7 +28,7 @@ Have a look around the scene and familiarise yourself with the landscape. You'll
 
 ![Figure 3. Brightness adjustment](l4_gamma.png)
 
-## Gathering training data
+## Recopilando datos de entrenamiento
 1. The first step in classifying our image is to collect some training data to teach the classifier.  We want to collect representative samples of reflectance spectra for each landcover class of interest.
 2. Using the cloud free scene as guidance, hover on the 'Geometry Imports' box next to the geometry drawing tools and click '+ new layer.'
 3. Each new layer represents one class within the training data, for example 'urban.'
@@ -61,7 +61,7 @@ print(classNames)
 ![Figure 7. Printing classes](screenshots/l4_printclass.png)
 
 
-## Create the training data
+## Creando datos de entrenamiento
 
 Now we can use the FeatureCollection we created to drill through the image and extract the reflectance data for each point, from every band. We create training data by overlaying the training points on the image.  This will add new properties to the feature collection that represent image band values at each point:
 
@@ -80,7 +80,7 @@ After running the script the training data will be printed to the console. You w
 ![Figure 8. Printing training data](screenshots/l4_training.png)
 
 
-## Train the classifier and run the classification
+## Entrenando el clasificador y ejecutando la clasificación
 
 Now we can train the classifier algorithm by using our examples of what different landcover class look like from a multi-spectral perspective.
 
@@ -115,7 +115,7 @@ Map.addLayer(classified,
 ![Figure 9. Classified map](screenshots/l4_classified.png)
 
 
-## Examine your results
+## Examinar los resultados
 
 Congratulations - your first landcover classification! But.....
 - Are you happy with the classification?
@@ -124,10 +124,4 @@ Congratulations - your first landcover classification! But.....
 
 We will look at how to refine this and discuss limitations and avenues for improvement next week.
 
--------
-### Thank you
 
-I hope you found that useful. A recorded video of this tutorial can be found on my YouTube Channel's [Introduction to Remote Sensing of the Environment Playlist](https://www.youtube.com/playlist?list=PLf6lu3bePWHDi3-lrSqiyInMGQXM34TSV) and on my lab website [GEARS](https://www.gears-lab.com).
-
-#### Kind regards, Shaun R Levick
-------
