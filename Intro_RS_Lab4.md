@@ -1,37 +1,6 @@
 
-# Introduction to Remote Sensing of the Environment
-Lab 4 - Image Classification - part 1
+# Clasificación supervisada de imágenes 
 --------------
-
-### Acknowledgments
-- Google Earth Engine Team
-- Google Earth Engine Developers group
-- David Saah and Nicholas Clinton
-
-------
-
-### Prerequisites
--------------
-
-Completion of this lab exercise requires use of the Google Chrome browser and a Google Earth Engine account. If you have not yet signed up - please do so now in a new tab:
-
-[Earth Engine account registration](https://signup.earthengine.google.com/)
-
-Once registered you can access the Earth Engine environment here:
-https://code.earthengine.google.com
-
-Google Earth Engine uses the JavaScript programming language. We will cover the very basics of this language during this course. If you would like more detail you can read through the introduction provided here:
-
-[JavaScript background](https://developers.google.com/earth-engine/tutorial\_js\_01)
-
-------------------------------------------------------------------------
-
-### Objective
-
-
-The objective of this lab is to gain understanding of the image classification process and explore ways of turning remotely sensed imagery into landcover maps.
-
-----------
 
 ## Loading up the image
 
