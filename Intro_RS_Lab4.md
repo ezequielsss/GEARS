@@ -1,5 +1,3 @@
-![Shaun Levick](Logo3.png)
-GEARS - Geospatial Ecology and Remote Sensing lab - https://www.gears-lab.com
 
 # Introduction to Remote Sensing of the Environment
 Lab 4 - Image Classification - part 1
